@@ -46,18 +46,18 @@ public class Main {
 
     public static String Convert(int number) throws Exception
     {
-        if(number < 1)
+        if (number < 1)
         {
             throw new Exception("");
         }
-        if(number > 3999)
+        if (number > 3999)
         {
             throw new Exception("");
         }
 
         int arabicNumber = (int)(m_arabicToRoman.floorKey(number));
 
-        if(arabicNumber == number)
+        if (arabicNumber == number)
         {
             return m_arabicToRoman.get(number).toString();
         }
